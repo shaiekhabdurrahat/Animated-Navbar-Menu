@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8e8e8;
+
+}
+.menu{
+    width: 300px;
+    height: 60px;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.btn{
+    width: 60px;
+    height: 60px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    color: #f1f1f1;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: #03a6cf;
+}
+.btn::before{
+    position: absolute;
+    content: "Home";
+    font-size: 10px;
+    background: black;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1px 6px;
+    transform: translate(-50%,0);
+    transition: 0.5s;
+    opacity: 0;
+
+}
+.btn:hover::before{
+    transform: translate(-50%,-40px);
+    opacity: 1;
+}
+.btn:nth-child(2)::before{
+    content: "Message";
+}
+.btn:nth-child(3)::before{
+    content: "Add";
+}
+.btn:nth-child(4)::before{
+    content: "Settings";
+}
+.btn:nth-child(5)::before{
+    content: "Profile";
+}
